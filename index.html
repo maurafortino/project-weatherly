@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parallax Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/CSS/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/CSS/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <!-----------------------HEADER & NAVBAR--------------------------->
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><i class="material-icons">beach_access weatherly</i></a>
+            <ul class="right show-on-med-and-down">
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+                <br><br>
+                <li><a href="#WeatherRef">Weather</a></li>
+                <li><a href="#recipeRef">Recipes</a></li>
+                <li><a href="#drinksRef">Drinks</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-----------------------APP OVERVIEW--------------------------->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center white-text text-lighten-2">wEATherly</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Designing a Seasonal Meal from your current Place and Time</h5>
+                </div>
+
+                <!--1st IMG-->
+                <div class="parallax"><img src="assets/IMG/background1.jpg" alt="Unsplashed background img 1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------WEATHER--------------------------->
+    <div class="container">
+        <div class="section">
+            <h2 class="col s12 black-text">Weather Search</h2>
+
+            <!--Location Input-->
+            <form id="search-form">
+                <label class="black-text" for="city-input">Search a City</label>
+                <input type="text" id="city-input"><span id="errorMessage" class="red-text"></span><br>
+
+                <!--Button triggers new recipes to be populated-->
+                <input id="search-city" type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+    <!-----------------------RECIPES--------------------------->
+    <div class="container">
+        <div class="section recipeRef">
+            <h2 class="col s12 black-text">Your Recipes:</h2>
+            <br><br>
+            <!--Recipes will Get Dumped Here-->
+            <div id="recipe-view" class="container black-text px-0 col l3 s12">
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------DRINKS--------------------------->
+    <div class="container">
+        <div class="section">
+            <h2 class="col s12 black-text">Your Drinks:</h2>
+            <br><br>
+            <!--Drinks will Get Dumped Here-->
+            <div id="drinks-view" class="container black-text px-0 col l3 s12">
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------HERE IS YOUR MEAL--------------------------->
+    <div class="container">
+        <div class="section">
+            <h2 class="col s12 black-text">Meal Pairing:</h2>
+            <br><br>
+
+            <!--Meal/drink choice will Get Dumped Here-->
+            <div id="full-view" class="container black-text px-0 col l3 s12"></div>
+        </div>
+    </div>
+
+    <!-----------------------FOOTER--------------------------->
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Group Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of Bootcamp students working on this project like
+                        it's our
+                        full time job.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Alex Briody</a></li>
+                        <li><a class="white-text" href="#!">Alissa Yamazaki</a></li>
+                        <li><a class="white-text" href="#!">Catherine Gomez</a></li>
+                        <li><a class="white-text" href="#!">Ky O'Brien</a></li>
+                        <li><a class="white-text" href="#!">Maura Fortino</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made using <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="assets/JS/materialize.js"></script>
+    <script src="assets/JS/init.js"></script>
+    <script src="assets/JS/app.js"></script>
+
+</body>
+
+</html>

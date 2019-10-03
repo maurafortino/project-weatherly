@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+.container {
+   
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+img {
+  width: 100%;
+}
+ 
+#content {
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 100px 200px;
+    grid-gap: 10px;
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#content div {
+    /* padding: 50%; */
+    font-family: 'Raleway', sans-serif;
+    background: #333;
+} 
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+#index-banner h5 {
+  size: 50px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 10px 10px 10px #000000;
+ }
+ 
+ #index-banner {
+  font-family: 'Handlee', cursive;
+ }
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
